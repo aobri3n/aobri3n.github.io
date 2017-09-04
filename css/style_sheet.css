@@ -1,5 +1,90 @@
 h1, h2, p{
-		
+	color:#e1e6ed;
 	font-variant:small-caps;
 }
+
+
+#profilepic {
+    border-radius: 15px 50px;
+	border: 2px solid #606e84;
+    padding: 5px; 
+}
+
+#about {padding-left: 35px;}
+
+#contactext {padding-left: 140px;}
+
+#projects {	
+	width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+    -webkit-transition: rotate(180deg),width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+#projects:hover{
+	-webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg);
+}
+
+#github {
+	color:red;
+}
+
+#gitpic {
+	border-radius: 15px 50px;
+	border: 2px solid #606e84;
+    padding: 5px;
+}
+
+#contact {
+	float:right;
+	padding-left:200px;
+    width: 50%;
+	}
+
+.image {
+	
+  opacity: 1;
+  display: block;
+  width: 400px;
+  height: 267px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+ 
+}
+
+.middle {
+  float:right;
+  padding-left:200px;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+
+#contact:hover .image {
+  
+  opacity: 0.3;
+}
+
+#contact:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  
+  color: white;
+  font-variant:small-caps;
+  font-weight:600;
+  font-size: 20px;
+  padding: 16px 32px;
+  
+}
+
+	
 
